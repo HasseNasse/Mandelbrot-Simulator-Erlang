@@ -1,5 +1,5 @@
 -module(hello).
--compile(Export_all).
+-compile(export_all).
 
 say()->
 	hello.
