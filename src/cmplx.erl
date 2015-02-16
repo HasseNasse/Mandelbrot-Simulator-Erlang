@@ -19,7 +19,7 @@ add(A, B)->
 
 % Will return the sqr-root of A
 sqr(A)->
-	A*A.
+	A*A%THIS IS A TEST.
 
 % Will return the absolute Val. of A
 abs(A)->
