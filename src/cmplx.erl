@@ -10,17 +10,7 @@
 
 %returns the complex number with real value X and imaginary Y
 new(X, Y)->
-<<<<<<< HEAD
 	{X, Y}.
-
-% Addition of two complex numbers A,B
-add(A, B)->
-	na.
-
-
-% Will return the sqr-root of A
-=======
-	{X,Y}.
 
 % Addition of two complex numbers A,B
 add(A,B)->
@@ -37,11 +27,10 @@ add(A,B)->
 	end.
 
 % Will return the sqr of A
->>>>>>> origin/master
 sqr(A)->
 	case A of
-		{A1,A2}->
-			{((A1*A1)+(A2*A2))*(-1)}; % (A+Bi)²=-1(A²+B²)
+		{X,Y}->
+			{(X*X) - (Y*Y), 2*X*Y}; % (A+Bi)²=-1(A²+B²)
 		true-> 
 			'Not a valid input!'
 	end.
